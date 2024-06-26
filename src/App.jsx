@@ -1,7 +1,7 @@
 
 function App() {
 
-   const postsData = [
+  const postsData = [
     {
      title: "Sample Text",
      excerpt: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -78,11 +78,11 @@ function App() {
         {
             postsData.map((post, index) => (
             <div className="blog-post-item" key={index}>
-            <img src={post.imageThumbnail} alt={post.title}/>
-                <h2>{post.title}</h2>
-                <p>{post.excerpt}</p>
-                <p>{post.timestamp}</p>
-                </div>
+              <img src={post.imageThumbnail} alt={post.title}/>
+              <h2>{post.title}</h2>
+              <p>{post.excerpt}</p>
+              <p>{post.timestamp}</p>
+            </div>
         ))
        } 
       </div>
