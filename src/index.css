@@ -1,0 +1,13 @@
+.blog-post-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog-post-item{
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 1rem;
+  box-shadow: 0 0 5px #ccc;
+  transition: all 0.3s ease-in-out;
+}
