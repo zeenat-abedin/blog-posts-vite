@@ -11,3 +11,15 @@
   box-shadow: 0 0 5px #ccc;
   transition: all 0.3s ease-in-out;
 }
+
+.blog-post-item img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.blog-post-item h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+  margin: 10px;
+}

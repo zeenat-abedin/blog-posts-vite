@@ -5,19 +5,19 @@ function App() {
     {
      title: "Sample Text",
      excerpt: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-     imageThumbnail: "https://placekitten.com/200/150",
+     imageThumbnail: "https://images.unsplash.com/photo-1519337364444-c5eeec430101?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
      timestamp: "2024-02-20T08:30:00.000Z"
     },
     {
      title: "Web Development",
      excerpt: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-     imageThumbnail: "https://placeimg.com/200/150/tech",
+     imageThumbnail: "https://images.unsplash.com/photo-1521669045495-4ceac990963a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
      timestamp: "2024-02-18T15:45:00.000Z"
     },
     {
      title: "Lorem Ipsum",
      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-     imageThumbnail: "https://placekitten.com/201/150",
+     imageThumbnail: "https://images.unsplash.com/photo-1625123627254-03a56c6a6b1e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxvZyUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D",
      timestamp: "2024-02-28T12:20:00.000Z"
     },
     {
