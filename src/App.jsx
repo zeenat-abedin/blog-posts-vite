@@ -73,16 +73,16 @@ function App() {
 
   return (
     <>
-      <h1>Photo Gallery</h1>
+      <h1>All blog posts</h1>
       <div className="blog-post-container">
         {
-            postsData.map((post, index) => (
-            <div className="blog-post-item" key={index}>
+          postsData.map((post, index) => (
+          <div className="blog-post-item" key={index}>
               <img src={post.imageThumbnail} alt={post.title}/>
               <h2>{post.title}</h2>
               <p>{post.excerpt}</p>
               <p>{post.timestamp}</p>
-            </div>
+          </div>
         ))
        } 
       </div>
