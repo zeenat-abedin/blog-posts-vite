@@ -70,6 +70,15 @@ function App() {
     },
   ]
 
+  const formatDate = (dateString) => {
+    const options = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    }
+    return new Date(dateString).toLocaleDateString("en-US", options)
+  }
+  
   return (
     <>
       <h1>All blog posts</h1>
@@ -80,7 +89,7 @@ function App() {
               <img src={post.imageThumbnail} alt={post.title}/>
               <h2>{post.title}</h2>
               <p>{post.excerpt}</p>
-              <p>{post.timestamp}</p>
+              <p>{formatDate(post.timestamp)}</p>
           </div>
         ))
        } 
