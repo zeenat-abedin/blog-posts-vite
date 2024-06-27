@@ -17,7 +17,7 @@ function App() {
     {
      title: "Lorem Ipsum",
      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-     imageThumbnail: "https://images.unsplash.com/photo-1625123627254-03a56c6a6b1e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxvZyUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D",
+     imageThumbnail: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
      timestamp: "2024-02-28T12:20:00.000Z"
     },
     {
