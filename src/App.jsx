@@ -1,3 +1,5 @@
+import { useCallback, useState } from 'react'
+import  debounce  from 'lodash.debounce'
 
 function App() {
 
@@ -69,6 +71,8 @@ function App() {
      timestamp: "2024-02-16T19:35:00.000Z"
     },
   ]
+  const [ searchTerm, setSearchTerm ] = useState('')
+  const [filteredPosts, setFilteredPosts] = useState(postsData); 
 
   const formatDate = (dateString) => {
     const options = {
@@ -78,13 +82,26 @@ function App() {
     }
     return new Date(dateString).toLocaleDateString("en-US", options)
   }
+
+  const debouncedSearch = useCallback(
+    debounce((searchTerm) => {
+      const filteredPosts = postsData.filter(post => post.title.toLowerCase().includes(searchTerm.toLowerCase()) || post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()))
+      setFilteredPosts(filteredPosts)
+      }, 500),
+  )
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value)
+    debouncedSearch(e.target.value)
+  }
   
   return (
     <>
+      <input type="text" placeholder='Search post' value={searchTerm} onChange={handleSearchChange} />
       <h1>All blog posts</h1>
       <div className="blog-post-container">
         {
-          postsData.map((post, index) => (
+          filteredPosts.map((post, index) => (
           <div className="blog-post-item" key={index}>
               <img src={post.imageThumbnail} alt={post.title}/>
               <h2>{post.title}</h2>
