@@ -97,8 +97,8 @@ function App() {
   
   return (
     <>
-      <input type="text" placeholder='Search post' value={searchTerm} onChange={handleSearchChange} />
       <h1>All blog posts</h1>
+      <input type="text" placeholder='Search post' value={searchTerm} onChange={handleSearchChange} />
       <div className="blog-post-container">
         {
           filteredPosts.map((post, index) => (
